@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="simpleCalculator.js" text="JavaScript"></script>
+    <link rel="stylesheet" href="simpleCalculator.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class ="container"> 
+        <div class ="calculator dark">
+            <div class="theme active">
+                <i class="theme-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="button-operator" id="clear" onclick="clear()">C</button></td>
+                        <td><button class="button-operator" id="decimal" onclick="decimal()">.</button></td>
+                        <td><button class="button-operator" id="percent" onclick="percent()">%</button></td>
+                        <td><button class="button-operator" id="backspace" onclick="backspace()">back</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="7" onclick="number7()">7</button></td>
+                        <td><button class="button-number" id="8" onclick="number8()">8</button></td>
+                        <td><button class="button-number" id="9" onclick="number9()">9</button></td>
+                        <td><button class="button-operator" id="divide" onclick="divide()">&divide;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="4" onclick="number4()">4</button></td>
+                        <td><button class="button-number" id="5" onclick="number5()">5</button></td>
+                        <td><button class="button-number" id="6" onclick="number6()">6</button></td>
+                        <td><button class="button-operator" id="multiply" onclick="multiply()">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-number" id="1" onclick="number1()">1</button></td>
+                        <td><button class="button-number" id="2" onclick="number2()">2</button></td>
+                        <td><button class="button-number" id="3" onclick="number3()">3</button></td>
+                        <td><button class="button-operator" id="subtract" onclick="subtract()">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button-operator" id="(" onclick="firstBracket()">(</button></td>
+                        <td><button class="button-number" id="0" onclick="number0()">0</button></td>
+                        <td><button class="button-operator" id=")" onclick="secondBracket()">)</button></td>
+                        <td><button class="button-operator" id="add" onclick="add()">+</button></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><button class="button-operator" id="equal" onclick="equal()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    
+    
+</body>
+</html>
